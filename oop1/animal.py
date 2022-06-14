@@ -17,6 +17,10 @@ class Animal:
         print(f'Color:{self.color}')
         print(f'Age:{self.age}')
 
+    # Deconstructor
+    def __del__ (self):
+        print(f'Object was destroied')
+
 #สร้าง object
 if __name__ == "__main__":
     ula = Animal()
