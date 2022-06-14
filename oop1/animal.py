@@ -31,16 +31,17 @@ if __name__ == "__main__":
     ula.new_animal("Ula","Scottish","White",1)
     ula.print_detail()
 
-    drac = Animal()
-    drac.new_animal("Drac","Scottish","White",1)
-    #เปลี่ยนค่าตัวแปร แก้ไขข้อมูล จาก Scottish เป็น Catfish
-    drac.breed = "Catfish"
-    drac.print_detail()
+#สร้าง object
+drac = Animal()
+drac.new_animal("Drac","Scottish","White",1)
+#เปลี่ยนค่าตัวแปร แก้ไขข้อมูล จาก Scottish เป็น Catfish
+drac.breed = "Catfish"
+drac.print_detail()
 
 
-    #เรียกดูข้อมูลของ object ผ่านทางชื่อ class
-    Animal.print_detail(ula) #ula.print_detail()
-    Animal.print_detail(drac) #drac.print_detail()
+#เรียกดูข้อมูลของ object ผ่านทางชื่อ class
+Animal.print_detail(ula) #ula.print_detail()
+Animal.print_detail(drac) #drac.print_detail()
 
 #เรียกดู class variable ทั้งหมด
 print(f'{Animal.__dict__}')
@@ -48,3 +49,10 @@ print(f'-------------')
 
 #เรียกดู instance variable ทั้งหมด
 print(f'{ula.__dict__}')
+
+#สร้าง object
+peter = Animal()
+peter.new_animal('Peter','Parrot','green yellow red',2)
+#เพิ่ม attributes ใหม่
+peter.leg = 2
+print(f'{peter.__dict__}')
