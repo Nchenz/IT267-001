@@ -19,3 +19,4 @@ turnoff()
 print(f'Status = {switch_status}') #False
 turnoff()
 print(f'Status = {switch_status}') #False
+print(f'Status = {switch_status}') #False

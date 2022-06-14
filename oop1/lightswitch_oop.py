@@ -24,3 +24,4 @@ switch_obj.turnoff()
 switch_obj.show() #False
 switch_obj.turnoff()
 switch_obj.show() #False
+switch_obj.show() #False
