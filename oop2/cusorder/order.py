@@ -1,7 +1,7 @@
 class Order:
-    def __init__(self) -> None:
-        self.date = ''
-        self.status = ''
+    def __init__(self,date,status) -> None:
+        self.date = date
+        self.status = status
 
     def cal_tax(self):
         pass
