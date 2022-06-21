@@ -1,22 +1,20 @@
-#this file is outside package bank
+#this file is inside bank package
 #call module
-#เรียกผ่านpackge แทน
-from bank import customer,account
-
-"""#from bank import customer
-from bank.customer import Customer  
-from bank.account import Account
-cus1 = Customer()
-cus1.new_customer()"""
-
-
+#from customer import Customer
+#from account import Account
+"""from bank import customer,account #วิทีที่1
 cus1 = customer.Customer()
+cus1_acc = account.Account()"""
+
+from bank.customer import Customer #วิทีที่2
+from bank.account import Account   #วิทีที่2
+
+cus1 = Customer()
 cus1.new_customer()
 
-#เพราะอยู่คนละclass ต้องสร้างobject แยกกัน
-cus1_acc = account.Account()
-cus1_acc.open_account(cus1.name,'Saving','108-813-4567',500) #เอาข้อมูลจากอันหนึ่งมายังอีกอันหนึ่ง cus.name เรียกมาใช้
-print('**** Open Bank Account Detail ****')
+cus1_acc = Account()
+cus1_acc.open_account(cus1.name,"Saving",'10-123-456',500)
+
+print("** Open Bank Account Detai **")
 print(cus1.cus_info())
 print(cus1_acc.display_balance())
-#print(cus1.cus_info())
