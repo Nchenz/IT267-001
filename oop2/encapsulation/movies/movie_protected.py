@@ -14,4 +14,4 @@ class Movie:
         self._rating = rating
 
     def _get_movie(self):
-        return f'Title: {self._title}\nYear: {self._year}\nGenre: {self._genre}\nRating: {self._rating}'
+        print(f'Title: {self._title}\nYear: {self._year}\nGenre: {self._genre}\nRating: {self._rating}')
