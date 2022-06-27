@@ -18,7 +18,7 @@ if __name__ == '__main__':
     m = Movie()
     #call public method -> ชื่อobj.method
     m.add_movie('Mulan',2020,'action')
-    print(f'Title: {m.get_movie}')
+    print(f'Title: {m.get_movie()}')
 
     #access public attributes -> obj.attribute
     print(f'Title: {m.title}')
