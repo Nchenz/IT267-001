@@ -2,7 +2,15 @@ from geographic import Geographic
 from temperature import Temperature
 
 class Conutry(Geographic,Temperature): #multiple inheritance
+    """ def __init__(self,name,area,population) -> None:
+        self.name = name
+        self.area = area
+        self.population = population"""
+    
     def __init__(self,name,area,population) -> None:
+        #super().__init__() #ระบุชื่อคลาสแม่ กรณ๊ชื่อตัวแปรซ้ำกัน ไม่ต้องมีself
+        Geographic.__init__(self) #เรียกใช้จากชื่อคลาสแม่ ต้องมีself
+        Temperature.__init__(self)
         self.name = name
         self.area = area
         self.population = population
