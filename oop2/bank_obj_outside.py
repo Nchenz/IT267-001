@@ -1,4 +1,4 @@
-#this file is inside bank package
+#this file is outside bank package
 #call module
 #from customer import Customer
 #from account import Account
