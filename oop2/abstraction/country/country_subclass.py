@@ -1,4 +1,3 @@
-from abc import ABC
 from country_abstract import Country
 
 class Europe(Country):
