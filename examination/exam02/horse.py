@@ -1,9 +1,8 @@
 class Horse:
-
-    def __init__(self,name:str,color:str,max_height:float) -> None:
+    max_height:float = 200
+    def __init__(self,name:str,color:str) -> None:
         self.name = name
         self.color = color
-        self.max_height - max_height
 
     def run(self):
         print(f'{self.name} is running')

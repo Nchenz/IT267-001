@@ -2,8 +2,9 @@ from horse import Horse
 from donkey import Donkey
 
 class Mule(Horse,Donkey):
-    def __init__(self, name: str, color: str, max_height: float) -> None:
-        super().__init__(name, color, max_height=200)
+    def __init__(self, name: str, color: str , age:int,weight:float ) -> None:
+        Horse.__init__(self,name,color)
+        Donkey.__init__(self,age ,weight)
 
     def run(self):
         super().run()
